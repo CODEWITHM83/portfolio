@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithun | Data Analyst Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                        },
+                        dark: {
+                            bg: '#0a0f1d',
+                            card: '#111827',
+                            border: '#1f293d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-slate-300 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-dark-bg/85 backdrop-blur-md border-b border-dark-border">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-extrabold text-white tracking-tight flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-brand-500"></span>
+                MITHUN<span class="text-brand-500">.DATA</span>
+            </a>
+
+            <!-- Desktop Nav Items -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#about" class="hover:text-brand-400 transition">About</a>
+                <a href="#skills" class="hover:text-brand-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-brand-400 transition">Work & Projects</a>
+                <a href="#contact" class="hover:text-brand-400 transition">Contact</a>
+            </div>
+
+            <!-- Social CTAs -->
+            <div class="flex items-center gap-4">
+                <a href="https://github.com/CODEWITHM83" target="_blank" class="p-2.5 rounded-lg bg-dark-card border border-dark-border hover:border-brand-500 text-slate-300 hover:text-white transition">
+                    <i class="fa-brands fa-github text-lg"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mithun-dataanalyst/" target="_blank" class="p-2.5 rounded-lg bg-dark-card border border-dark-border hover:border-brand-500 text-blue-400 hover:text-white transition">
+                    <i class="fa-brands fa-linkedin-in text-lg"></i>
+                </a>
+                <a href="#contact" class="hidden sm:inline-flex px-5 py-2.5 rounded-lg bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold text-sm transition">
+                    Hire Me
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="pt-40 pb-20 px-6 max-w-7xl mx-auto relative overflow-hidden">
+        <div class="absolute -top-32 right-0 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-3xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-brand-500/30 bg-brand-500/10 text-brand-400 text-xs font-semibold mb-6">
+                <span class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
+                Available for Data Analyst Roles & Freelance
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                Turning Complex Data Into <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-cyan-400">Actionable Insights</span>
+            </h1>
+
+            <p class="text-lg text-slate-400 leading-relaxed mb-8">
+                Hi, I'm <strong class="text-white">Mithun</strong>. I specialize in exploratory data analysis, interactive dashboard development, and statistical modeling using Python, SQL, and Power BI to help businesses make confident, data-driven decisions.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4">
+                <a href="#projects" class="px-6 py-3.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold transition flex items-center gap-2">
+                    Explore My Projects <i class="fa-solid fa-arrow-down text-sm"></i>
+                </a>
+                <a href="https://github.com/CODEWITHM83" target="_blank" class="px-6 py-3.5 rounded-xl bg-dark-card border border-dark-border hover:border-slate-600 font-semibold text-white transition flex items-center gap-2">
+                    <i class="fa-brands fa-github"></i> Visit GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- Metric highlights -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-12 border-t border-dark-border">
+            <div class="p-4 bg-dark-card/50 rounded-xl border border-dark-border">
+                <h3 class="text-2xl font-bold text-white mb-1" id="stat-projects">10+</h3>
+                <p class="text-xs text-slate-400 uppercase tracking-wider font-medium">Projects Done</p>
+            </div>
+            <div class="p-4 bg-dark-card/50 rounded-xl border border-dark-border">
+                <h3 class="text-2xl font-bold text-white mb-1">SQL & Python</h3>
+                <p class="text-xs text-slate-400 uppercase tracking-wider font-medium">Core Stack</p>
+            </div>
+            <div class="p-4 bg-dark-card/50 rounded-xl border border-dark-border">
+                <h3 class="text-2xl font-bold text-white mb-1">Power BI</h3>
+                <p class="text-xs text-slate-400 uppercase tracking-wider font-medium">BI & Dashboards</p>
+            </div>
+            <div class="p-4 bg-dark-card/50 rounded-xl border border-dark-border">
+                <h3 class="text-2xl font-bold text-white mb-1">100%</h3>
+                <p class="text-xs text-slate-400 uppercase tracking-wider font-medium">Data Accuracy</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-brand-400 text-sm font-bold uppercase tracking-widest">Capabilities</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Tools & Technical Skills</h2>
+            <p class="text-slate-400 text-sm mt-3">The technology stack I leverage to extract, clean, analyze, and visualize data.</p>
+        </div>
+
+        <div id="skills-container" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Dynamically populated from JS config -->
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION (BARAA STYLE CARDS) -->
+    <section id="projects" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div>
+                <span class="text-brand-400 text-sm font-bold uppercase tracking-widest">Showcase</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Featured Projects</h2>
+                <p class="text-slate-400 text-sm mt-2">Real-world data problems solved through structured pipelines and analytics.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div id="filter-buttons" class="flex flex-wrap gap-2">
+                <button onclick="filterProjects('all')" class="filter-btn active px-4 py-2 rounded-lg text-xs font-semibold bg-brand-500 text-slate-950 transition">All Work</button>
+                <button onclick="filterProjects('Power BI')" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-dark-card border border-dark-border text-slate-300 hover:border-slate-500 transition">Power BI</button>
+                <button onclick="filterProjects('Python')" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-dark-card border border-dark-border text-slate-300 hover:border-slate-500 transition">Python</button>
+                <button onclick="filterProjects('SQL')" class="filter-btn px-4 py-2 rounded-lg text-xs font-semibold bg-dark-card border border-dark-border text-slate-300 hover:border-slate-500 transition">SQL</button>
+            </div>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Dynamically populated from JS -->
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <div class="p-10 rounded-2xl bg-dark-card border border-dark-border relative overflow-hidden">
+            <div class="absolute -bottom-20 -left-20 w-60 h-60 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <h2 class="text-3xl font-extrabold text-white mb-4">Let's Work Together</h2>
+            <p class="text-slate-400 text-sm max-w-lg mx-auto mb-8">
+                Have an analytics project, job opportunity, or question? Connect with me directly on LinkedIn or GitHub.
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://www.linkedin.com/in/mithun-dataanalyst/" target="_blank" class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold transition flex items-center gap-2">
+                    <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+                </a>
+                <a href="https://github.com/CODEWITHM83" target="_blank" class="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold transition flex items-center gap-2">
+                    <i class="fa-brands fa-github"></i> Follow on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-dark-border py-8 text-center text-xs text-slate-500">
+        <p>© <span id="year"></span> Mithun. All rights reserved. Built with Tailwind CSS.</p>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- EASY CONFIGURATION SCRIPT                  -->
+    <!-- UPDATE YOUR DATA HERE IN ONE PLACE         -->
+    <!-- ========================================== -->
+    <script>
+        const myData = {
+            skills: [
+                {
+                    category: "Data Analysis & Programming",
+                    icon: "fa-solid fa-code",
+                    items: ["Python (Pandas, NumPy, Matplotlib)", "SQL (PostgreSQL, MySQL)", "Exploratory Data Analysis", "Data Cleaning"]
+                },
+                {
+                    category: "BI & Visualization",
+                    icon: "fa-solid fa-chart-pie",
+                    items: ["Microsoft Power BI", "DAX Formulas", "Interactive Dashboards", "Microsoft Excel (VLOOKUP, Pivot)"]
+                },
+                {
+                    category: "Data Warehousing & Tools",
+                    icon: "fa-solid fa-database",
+                    items: ["Git & GitHub Version Control", "Relational Database Design", "ETL Pipelines", "Statistical Modeling"]
+                }
+            ],
+            projects: [
+                {
+                    id: 1,
+                    title: "Sales Performance & Profitability Dashboard",
+                    category: "Power BI",
+                    tags: ["Power BI", "DAX", "Data Modeling"],
+                    description: "Built an executive dashboard tracking Revenue, Profit Margin, and Sales trends across multiple regions, identifying an 18% improvement area.",
+                    github: "https://github.com/CODEWITHM83",
+                    demo: "#",
+                    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80"
+                },
+                {
+                    id: 2,
+                    title: "Customer Churn Prediction & EDA",
+                    category: "Python",
+                    tags: ["Python", "Pandas", "Scikit-Learn"],
+                    description: "Cleaned and analyzed customer behavior data from over 10,000 records. Built predictive churn models with 84% accuracy.",
+                    github: "https://github.com/CODEWITHM83",
+                    demo: "#",
+                    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80"
+                },
+                {
+                    id: 3,
+                    title: "E-Commerce Database Optimization & SQL Queries",
+                    category: "SQL",
+                    tags: ["SQL", "PostgreSQL", "Database Design"],
+                    description: "Wrote complex joins, subqueries, and window functions to compute Customer Lifetime Value (CLV) and optimize query performance by 35%.",
+                    github: "https://github.com/CODEWITHM83",
+                    demo: "#",
+                    image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=600&q=80"
+                }
+            ]
+        };
+
+        // Render Skills
+        const skillsContainer = document.getElementById('skills-container');
+        skillsContainer.innerHTML = myData.skills.map(group => `
+            <div class="bg-dark-card border border-dark-border rounded-2xl p-6 hover:border-brand-500/50 transition">
+                <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl mb-4">
+                    <i class="${group.icon}"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-4">${group.category}</h3>
+                <ul class="space-y-2">
+                    ${group.items.map(item => `
+                        <li class="flex items-center gap-2 text-sm text-slate-400">
+                            <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+                            ${item}
+                        </li>
+                    `).join('')}
+                </ul>
+            </div>
+        `).join('');
+
+        // Render Projects
+        const projectsGrid = document.getElementById('projects-grid');
+        function renderProjects(category = 'all') {
+            const filtered = category === 'all' 
+                ? myData.projects 
+                : myData.projects.filter(p => p.category.toLowerCase() === category.toLowerCase());
+
+            projectsGrid.innerHTML = filtered.map(item => `
+                <div class="bg-dark-card border border-dark-border rounded-2xl overflow-hidden hover:border-brand-500/50 transition flex flex-col group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-3 right-3 bg-dark-bg/80 backdrop-blur-md border border-dark-border text-brand-400 text-xs px-2.5 py-1 rounded-full font-medium">
+                            ${item.category}
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-wrap gap-1.5 mb-3">
+                                ${item.tags.map(t => `<span class="bg-dark-bg border border-dark-border text-slate-300 text-[11px] px-2 py-0.5 rounded font-mono">${t}</span>`).join('')}
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2 leading-snug">${item.title}</h3>
+                            <p class="text-sm text-slate-400 mb-6 leading-relaxed">${item.description}</p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-dark-border">
+                            <a href="${item.github}" target="_blank" class="flex-1 text-center py-2 text-xs font-semibold rounded-lg bg-dark-bg hover:bg-slate-800 text-white border border-dark-border transition">
+                                <i class="fa-brands fa-github mr-1"></i> Code
+                            </a>
+                            <a href="${item.demo}" target="_blank" class="flex-1 text-center py-2 text-xs font-semibold rounded-lg bg-brand-500 hover:bg-brand-600 text-slate-950 transition">
+                                Live View <i class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Project filter function
+        function filterProjects(cat) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-500', 'text-slate-950');
+                btn.classList.add('bg-dark-card', 'text-slate-300');
+            });
+            event.target.classList.add('bg-brand-500', 'text-slate-950');
+            event.target.classList.remove('bg-dark-card', 'text-slate-300');
+            renderProjects(cat);
+        }
+
+        // Initialize projects & stats
+        renderProjects();
+        document.getElementById('stat-projects').innerText = myData.projects.length + "+";
+        document.getElementById('year').innerText = new Date().getFullYear();
+    </script>
+</body>
+</html>
